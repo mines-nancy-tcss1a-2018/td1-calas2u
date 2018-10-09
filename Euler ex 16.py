@@ -1,11 +1,10 @@
 # -*- coding:latin-1 -*-
-def sumdigit(n):
-    sum=0
-    for e in str(n):
-        sum+=int(e)
-    return sum
+def sommedigit(n):
+    somme=0
+    for chiffre in str(n):
+        somme+=int(chiffre)
+    return somme
 
-assert sumdigit(2**15)==26
+assert sommedigit(2**15)==26
 
-print ('La somme des digits de 2**1000 est :')
-print (sumdigit(2**1000))
+print ('La somme des digits de 2**1000 est :',sommedigit(2**1000))

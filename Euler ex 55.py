@@ -21,10 +21,15 @@ def lychrel(nbr):
 
 assert lychrel(47)==False
 
-nbr_lychrel=0
-for i in range(1,10001):
-    if lychrel(i):
-        nbr_lychrel+=1
-print("Le nombre de nombre Lychrel entre 0 et 10 000 est :",nbr_lychrel)
+def nbr_lychrel(n):
+    nbrlychrel=0
+    for i in range(1,n+1):
+        if lychrel(i):
+            nbrlychrel+=1
+    return nbrlychrel
+
+assert nbr_lychrel(4)==0
+
+print("Le nombre de nombre Lychrel entre 0 et 10 000 est :",nbr_lychrel(10000))
     
     
